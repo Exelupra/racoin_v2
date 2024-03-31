@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 (PHP_SAPI !== 'cli' || isset($_SERVER['HTTP_USER_AGENT'])) && die('cli only');
 
 // Get the config.ini file

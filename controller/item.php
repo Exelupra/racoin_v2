@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace controller;
 use AllowDynamicProperties;
 use model\Annonce;
@@ -26,7 +26,7 @@ use model\Categorie;
             array('href' => $chemin."/cat/".$n,
                 'text' => Categorie::find($this->annonce->id_categorie)?->nom_categorie),
             array('href' => $chemin."/item/".$n,
-            'text' => $this->annonce->titre)
+                'text' => $this->annonce->titre)
         );
 
         $this->annonceur = Annonceur::find($this->annonce->id_annonceur);

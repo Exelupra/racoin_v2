@@ -5,7 +5,7 @@
  * Date: 26/01/15
  * Time: 00:25
  */
-
+declare(strict_types=1);
 namespace controller;
 use model\Annonce;
 use model\Annonceur;
